@@ -1,0 +1,88 @@
+<!Doctype html>
+<html>
+<head>
+<title>Animation</title>
+</head>
+<style> 
+    .main-div {
+        margin: 15% 39%;
+        position: relative;
+    }
+    .animation-div {
+        display: flex;
+    }
+    .rotation-div {
+        width: 111px;
+        height: 106px;
+        z-index: 1;
+        transition-timing-function: linear;
+        transition: transform 2s;
+    }
+
+    .rotation-left-bottom {
+        background-color: red;
+    }
+    .main-div:hover .rotation-left-bottom {
+        animation: mymove1 5s 1;
+    }
+    @keyframes mymove1 {
+      50% {transform: rotate(90deg);
+           transform-origin: top left;}
+    }
+
+    .rotation-left-top {
+        background-color: yellow;
+    }
+    .main-div:hover .rotation-left-top {
+        animation: mymove2 5s 1;
+    }
+    @keyframes mymove2 {
+       50% {transform: rotate(-90deg);
+            transform-origin: top right;}
+    }
+
+    .rotation-right-bottom {
+        background-color: blue;
+    }
+    .main-div:hover .rotation-right-bottom {
+        animation: mymove3 5s 1;
+    }
+    @keyframes mymove3 {
+       50% {transform: rotate(-90deg);
+            transform-origin: bottom left;}
+    }
+
+    .rotation-right-top {
+        background-color: green;
+    }
+    .main-div:hover .rotation-right-top {
+        animation: mymove4 2s;
+    }
+    @keyframes mymove4 {
+       50% {transform: rotate(90deg);
+            transform-origin: bottom right;}
+    }
+    .welcome-text {
+        position: absolute;
+        color: black;
+        top: 102px;
+        left: 95px;
+        z-index: 0;
+    }
+    </style>
+    <body>
+        <div class="main-div">
+            <div class="top-div animation-div">
+                <div class="rotation-div rotation-left-bottom"></div>
+                <div class="rotation-div rotation-left-top"></div>
+            </div>
+            <div class="bottom-div animation-div">
+                <div class="rotation-div rotation-right-bottom"></div>
+                <div class="rotation-div rotation-right-top"></div>
+            </div>
+            <div class="welcome-text">
+                <h3>Hii</h3>
+            </div>
+        </div>
+    </body>
+</html>
