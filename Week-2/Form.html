@@ -1,0 +1,69 @@
+<!Doctype html>
+<html>
+<head>
+<title>Form</title>
+</head>
+    <h1 style= "text-align: center;"">Lorem ipsum dolor sit amet,</h1>
+    <h2 style="text-align: center;">consectetur adioiscing elit.</h2>
+    <style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        position: relative;
+    }
+    /* .grid-box {
+        background-color: #eee;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 30px;
+        font-size: 30px;
+        text-align: center;
+      } */
+     </style>
+    <body>
+        <div class="grid-container">
+        
+           <p> 
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus
+             aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci,
+             pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc,
+             at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta.
+             Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.
+           </p>
+            <p>
+                ipsum dolor sit amet consectetur adipisicing elit. 
+                Corrupti molestias suscipit numquam, omnis a in minima magnam repellendus rerum, 
+                consequatur, unde consequuntur corporis dolorum officiis tempora aliquam impedit optio nisi.
+            </p>
+
+         <img src="pic_trulli.jpg" width="500" height="333">
+            
+           <p>
+            Other things
+            Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. 
+            Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est.</p>
+    <form action="/action_page.php">
+        <input type="file" accept="image/*" /><br><br>
+        <label for="title">Mr.</label>
+        <input type="radio" id="Mr." name="gender">
+        <label for="title">Mrs.</label>
+        <input type="radio" id="Mrs." name="gender">
+        <label for="title">Miss</label>
+        <input type="radio" id="Miss." name="gender"><br><br>
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="lname"><br><br>
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="number">Phone number</label>
+        <input type="text" id="number" name="number"><br><br>
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password"><br><br>
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country"><br><br>
+        <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)"> I agree to the Terms & Conditions<br><br>
+        <input type="submit" name="submit" id="submit">
+    </div>
+    </form>
+    </body>
+<html>
